@@ -47,7 +47,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory().withClient("vansa").secret("amret").accessTokenValiditySeconds(expiration)
+        clients.inMemory().withClient("vansa").secret("flowa").accessTokenValiditySeconds(expiration)
                 .scopes("read", "write").authorizedGrantTypes("password", "refresh_token", "client").resourceIds("resource");
     }
 
